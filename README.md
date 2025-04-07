@@ -69,9 +69,6 @@ chmod +x install.sh
 
 # Run the installer
 ./install.sh
-
-# give osme permission here
-chmod +x ~/dotfiles/install.sh
 ```
 
 ### What the Installer Does
