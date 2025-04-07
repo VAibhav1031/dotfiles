@@ -1,4 +1,4 @@
-# 🧙‍♂️ necromancer's Dotfiles
+# 🧙‍♂️ Necromancer's Dotfiles
 
 ![Terminal Preview](https://via.placeholder.com/800x400?text=Terminal+Preview)
 
@@ -23,6 +23,7 @@
   - 👀 Enhanced watch command
 
 - **Beautiful CLI Experience**
+  - YOU MUST INSTALL THESE TOOL IN ADVANCE , maybe in future you wont neeed to that but current script does work like this (so sorry for that 🙂)
   - 🎨 Colorful prompts and output using Oh My Bash themes
   - 🎭 Fun welcome messages with `figlet`, `lolcat`, `cowsay` and `fortune`
   - 💻 Clean terminal aesthetics with helpful status information
@@ -145,7 +146,7 @@ Feel free to fork this repository and customize it for your own use. If you have
 
 Maintained by necromancer (a.k.a. Vaibhav).  
 Built on top of CachyOS, powered by terminal vibes and open source spirit.
-
+I tried  what i know ,  If you know better than me , help me with your spells
 ---
 
 <p align="center">
