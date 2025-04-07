@@ -20,28 +20,40 @@ alias .3='cd ../../../'
 alias .4='cd ../../../../'
 alias .5='cd ../../../../../'
 
+## --------Package related -----------
 alias refresh="sudo pacman -Syu"
 alias in="sudo pacman -S"
 alias bomb="sudo pacman -R"
 alias nuke="sudo pacman -Rns"
 alias clr="clear"
 alias search="sudo pacman -Ss"
+alias re_bl="sudo systemctl restart bluetooth"
+
+# ---programming----------------
 alias jupyter-notebook='cd python && source pyvenv/bin/activate && jupyter notebook'
 alias stp_ollama="sudo systemctl stop ollama.service"
 alias strt_ollama="sudo systemctl start ollama.service"
 alias py="cd python && source pyvenv/bin/activate"
-alias re_bl="sudo systemctl restart bluetooth"
 alias rust="evcxr"
 
+#----games-------------
 alias xonotic="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /usr/bin/xonotic-sdl -window -width 1900 -height 1000"
-
 alias supertuxkart="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia supertuxkart"
 
 alias openttd="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia openttd"
 alias emacs="emacsclient -c -a 'emacs'"
-##banner##
+
+# ----banner---
 figlet -f slant -c -w 150 "N E C R O M A N C E R" | lolcat
 fortune computers linux wisdom -s | cowsay -f tux | lolcat
+
+# --- Git Shortcuts ---
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+alias gl='git pull'
+alias glog='git log --oneline --graph --decorate --all'
 
 #
 
