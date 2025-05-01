@@ -13,6 +13,7 @@ NC='\033[0m' # No Color
 # Dotfiles directory (where this script is located)
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+## Again these Banner thing i have  used  AI   to  implement , My main  written script is commented  in the last section of the file
 # Print banner
 echo -e "${PURPLE}"
 echo "███    ██ ███████  ██████ ██████   ██████  ███    ███  █████  ███    ██  ██████ ███████ ██████ "
@@ -43,6 +44,11 @@ backup_and_link ~/dotfiles/bash/.bash_profile ~/.bash_profile
 # You can add more symlinks here
 
 # Optional: Check for presence of common tools
+
+# /dev/null is a special file in Unix/Linux systems often called the "null device" or "black hole".
+# It discards all data written to it and returns EOF (End-of-File) when read from.
+# First time using it
+
 check_tools() {
   for tool in "$@"; do
     if ! command -v "$tool" &>/dev/null; then
