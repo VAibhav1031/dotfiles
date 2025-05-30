@@ -210,7 +210,7 @@ duck() {
 }
 
 # just give the url and start watching
-watch() {
+watchIT() {
   mpv "$1"
 }
 
