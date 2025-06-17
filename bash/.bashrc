@@ -220,8 +220,7 @@ playlocal() {
 }
 
 ### ─── Exports ─────────────────────────
-export PATH=$PATH:/opt/RustRover/bin
-export PATH=/opt/cuda/bin:$PATH
+export PATH="/opt/cuda/bin:$PATH"
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 
 #export PATH=$HOME/.local/bin:$PATH
@@ -234,8 +233,14 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export PATH=$PATH:$HOME/go/bin
 
+#Haskell environment path
 [ -f "/home/necromancer/.ghcup/env" ] && . "/home/necromancer/.ghcup/env" # ghcup-env
 
-export PATH=$PATH:/opt/pycharm/bin
+# JetBrains IDEs
+export PATH="$HOME/.local/rustrover/RustRover/bin:$PATH"
+export PATH="$HOME/.local/pycharm/pycharm-community/bin:$PATH"
+
+# Browser
+export PATH="$HOME:/.local/zen:$PATH"
 eval "$(uv generate-shell-completion bash)"
 eval "$(uvx --generate-shell-completion bash)"
