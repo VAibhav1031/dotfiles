@@ -55,7 +55,8 @@ alias gp='git push'
 alias gl='git pull'
 alias glog='git log --oneline --graph --decorate --all'
 
-#
+#--Dotfiles--
+alias dotpush='cd ~/dotfiles && git add . && git commit -m "update dotfiles" && git push'
 
 # Enable the subsequent settings only in interactive sessions
 case $- in
@@ -241,6 +242,6 @@ export PATH="$HOME/.local/rustrover/RustRover/bin:$PATH"
 export PATH="$HOME/.local/pycharm/pycharm-community/bin:$PATH"
 
 # Browser
-export PATH="$HOME:/.local/zen:$PATH"
+export PATH="$HOME/.local/zen:$PATH"
 eval "$(uv generate-shell-completion bash)"
 eval "$(uvx --generate-shell-completion bash)"
