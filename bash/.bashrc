@@ -48,7 +48,7 @@ alias emacs="emacsclient -c -a 'emacs'"
 
 case "$TERM" in
 xterm-kitty)
-  kitty +kitten icat --align left $HOME/Downloads/nec.gif
+  kitty +kitten icat --align left $HOME/Pictures/logo_necro/nec.gif
   ;;
 xterm-256color)
   figlet -f slant -c -w 150 "N E C R O M A N C E R" | lolcat
