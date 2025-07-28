@@ -44,7 +44,17 @@ alias openttd="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia open
 alias emacs="emacsclient -c -a 'emacs'"
 
 # ----banner---
-figlet -f slant -c -w 150 "N E C R O M A N C E R" | lolcat
+# figlet -f slant -c -w 150 "N E C R O M A N C E R" | lolcat
+
+case "$TERM" in
+xterm-kitty)
+  kitty +kitten icat --align left $HOME/Downloads/nec.gif
+  ;;
+xterm-256color)
+  figlet -f slant -c -w 150 "N E C R O M A N C E R" | lolcat
+  ;;
+esac
+
 fortune computers linux wisdom -s | cowsay -f tux | lolcat
 
 # --- Git Shortcuts ---
@@ -245,3 +255,10 @@ export PATH="$HOME/.local/pycharm/pycharm-community/bin:$PATH"
 export PATH="$HOME/.local/zen:$PATH"
 eval "$(uv generate-shell-completion bash)"
 eval "$(uvx --generate-shell-completion bash)"
+
+# temporary aliases (project-only)
+export N2T=~/nand2tetris/nand2tetris/tools/
+alias hardsim="$N2T/HardwareSimulator.sh"
+alias cpu="$N2T/CPUEmulator.sh"
+alias asm="$N2T/Assembler.sh"
+alias vm="$N2T/VMEmulator.sh"
