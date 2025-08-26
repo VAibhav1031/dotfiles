@@ -38,17 +38,19 @@ alias rust="evcxr"
 
 #----games-------------
 alias xonotic="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia /usr/bin/xonotic-sdl -window -width 1900 -height 1000"
-alias supertuxkart="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia supertuxkart"
+alias gzdoom="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia gzdoom"
 
 alias openttd="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia openttd"
-alias emacs="emacsclient -c -a 'emacs'"
 
 # ----banner---
 # figlet -f slant -c -w 150 "N E C R O M A N C E R" | lolcat
 
 case "$TERM" in
 xterm-kitty)
-  kitty +kitten icat --align left $HOME/Pictures/logo_necro/nec.gif
+  if [[ $- == *i* && -z "$SSH_CONNECTION" ]]; then
+    kitty +kitten icat --align left $HOME/Pictures/logo_necro/nec.gif
+    kitten notify Launched Kitty
+  fi
   ;;
 xterm-256color)
   figlet -f slant -c -w 150 "N E C R O M A N C E R" | lolcat
