@@ -42,6 +42,10 @@ alias gzdoom="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia gzdoo
 
 alias openttd="__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia openttd"
 
+# ----------etc-------------------
+alias myip="echo '$(ip -4 address | grep "global.* wlan0" | awk '{print $2}')'"
+alias whatismyip="echo '$(ip -4 address show scope global wlan0 | awk '/inet/ {print $2}' | cut -d/ -f1)'"
+
 # ----banner---
 # figlet -f slant -c -w 150 "N E C R O M A N C E R" | lolcat
 
