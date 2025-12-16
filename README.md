@@ -1,39 +1,10 @@
-# 🧙‍♂️ Necromancer's Dotfiles
+# Necromancer Dotfiles
 
 ![Terminal Preview](https://via.placeholder.com/800x400?text=Terminal+Preview)
 
-> Personal dotfiles for customizing my Linux environment (CachyOS), it can work on  any other linux Distro . A clean, consistent, and portable setup that can be easily reproduced across machines.
+> Personal dotfiles for customizing my Linux environment , it can work on  any other linux Distro . A clean, consistent, and portable setup that can be easily reproduced across machines.
 
-## ✨ Features
-
-- **Bash Configuration**
-  - Powerful `.bashrc` with organized sections and comments
-  - Contextual `.bash_profile` for login shell configuration
-  - Integration with Oh My Bash for themes and plugins
-
-- **Custom Aliases & Functions**
-  - 📦 System package management 
-  - 🔧 System utilities and navigation (`ll`, `clr`, `..`)
-  - 🐙 Git workflow shortcuts (`gs`, `ga`, `gc`, `gp`)
-  - 🐍 Programming helpers (`py`, `venv`, `rust-repl`)
-  - 📱 Bluetooth management (`bton`, `btoff`, `btcon`)
-  - 🔎 Web searches from terminal (`duck`)
-  - 📂 Archive extraction (`extract`)
-  - 🖥️ Local media server (`playlocal`)
-  - 👀 Enhanced watch command
-
-- **Beautiful CLI Experience**
-  - YOU MUST INSTALL THESE TOOL IN ADVANCE , maybe in future you wont neeed to that but current script does work like this (so sorry for that 🙂)
-  - 🎨 Colorful prompts and output using Oh My Bash themes
-  - 🎭 Fun welcome messages with `figlet`, `lolcat`, `cowsay` and `fortune`
-  - 💻 Clean terminal aesthetics with helpful status information
-
-- **Development Environment**
-  - 🦀 Rust support via automatic Cargo environment loading
-  - 🐍 Python virtual environment shortcuts
-  - 📁 XDG specification compliance for config directories
-
-## 📸 Screenshots
+##  Screenshots
 
 <details>
 <summary>Click to expand screenshots</summary>
@@ -46,7 +17,7 @@
 
 </details>
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -54,7 +25,7 @@
 - Bash (version 4.0+)
 - Package manager (pacman for Arch-based distros)
 
-> ⚠️ Before starting, **make sure no `.bashrc` or `.bash_profile` exists in `~`**, or back them up manually.
+> Before starting, **make sure no `.bashrc` or `.bash_profile` exists in `~`**, or back them up manually.
 
 ### Quick Install
 
@@ -82,8 +53,6 @@ chmod +x install.sh
 
 ### Manual Installation
 
-If you prefer to install manually:
-
 ```bash
 # Backup existing files
 mkdir -p ~/.dotfiles_backup
@@ -98,18 +67,7 @@ ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 ```
 
-## 📁 Repository Structure
-
-```
-dotfiles/
-├── bash/
-│   ├── .bashrc          # Main bash configuration
-│   └── .bash_profile    # Login shell configuration
-├── install.sh           # Installation script
-└── README.md            # This documentation
-```
-
-## 🛠️ Customization
+##  Customization
 
 ### Changing the Theme
 
@@ -132,23 +90,3 @@ Add new aliases to the appropriate section in `.bashrc`:
 alias myalias='command'
 ```
 
-## 🤝 Contributing
-
-Feel free to fork this repository and customize it for your own use. If you have improvements that might benefit others, pull requests are welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 🧛 About
-
-Maintained by necromancer (a.k.a. Vaibhav).  
-Built on top of CachyOS, powered by terminal vibes and open source spirit.
-I tried  what i know ,  If you know better than me , help me with your spells
----
-
-<p align="center">
-Created with 💜 by <b>necromancer(Vaibhav)</b>
-</p>

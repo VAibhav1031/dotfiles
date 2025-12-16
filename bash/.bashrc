@@ -30,10 +30,11 @@ alias search="sudo pacman -Ss"
 alias re_bl="sudo systemctl restart bluetooth"
 
 # ---programming----------------
-alias jupyter-notebook='cd python && source pyvenv/bin/activate && jupyter notebook'
+alias jupyter-notebook='cd python && source .venv/bin/activate && jupyter notebook'
+alias jupyter-lab='cd python && source .venv/bin/activate && jupyter lab'
 alias stp_ollama="sudo systemctl stop ollama.service"
 alias strt_ollama="sudo systemctl start ollama.service"
-alias py="cd python && source pyvenv/bin/activate"
+alias py="cd python && source .venv/bin/activate"
 alias rust="evcxr"
 
 #----games-------------
