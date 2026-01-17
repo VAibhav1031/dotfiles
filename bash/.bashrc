@@ -269,3 +269,15 @@ alias hardsim="$N2T/HardwareSimulator.sh"
 alias cpu="$N2T/CPUEmulator.sh"
 alias asm="$N2T/Assembler.sh"
 alias vm="$N2T/VMEmulator.sh"
+
+
+
+export JMETER_HOME="/opt/apache-jmeter-5.6.3"
+export PATH="$PATH:$JMETER_HOME/bin"
+
+# For just using the bob (manager for using different version nvim)
+export PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+
+
+alias vfx='NVIM_APPNAME=nvim-conf neovide'
+alias vfx_n='NVIM_APPNAME=nvim neovide'
