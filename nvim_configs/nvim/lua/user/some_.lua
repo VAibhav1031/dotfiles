@@ -1,4 +1,3 @@
---  Keymap: Toggle themes
 vim.keymap.set("n", "<leader>ut", function()
   local current = vim.g.colors_name
   if current == "nordic" then
