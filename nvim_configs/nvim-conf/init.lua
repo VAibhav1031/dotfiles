@@ -43,6 +43,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 vim.lsp.config('basedpyright', { capabilities = capabilities })
 vim.lsp.config('ruff', { capabilities = capabilities })
+vim.lsp.config('gopls', { capabilites = capabilities })
 
 local cmp = require('cmp')
 cmp.setup({
@@ -61,6 +62,12 @@ cmp.setup({
 })
 
 
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = '*.go',
+  callback = function()
+    vim.lsp.buf.format({ async = false })
+  end
+})
 
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
@@ -84,6 +91,8 @@ vim.opt.timeoutlen = 500
 -- LSP Section
 vim.lsp.enable("basedpyright")
 vim.lsp.enable("ruff") 
+vim.lsp.enable("gopls") 
+vim.lsp.enable("clangd") 
 
 
 --new one doesnt need s in config
@@ -182,7 +191,7 @@ require('nordic').setup({
 
 
 --calling the colorscheme 
-vim.cmd.colorscheme("torte")
+vim.cmd.colorscheme("gruvbox")
 
 
 
